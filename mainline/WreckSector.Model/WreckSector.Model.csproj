@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64783A58-C441-44C0-BA15-5AF69F2F1D78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WreckSector.Model</RootNamespace>
+    <AssemblyName>WreckSector.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionProperties\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Gameplay\Agent.cs" />
+    <Compile Include="GameConfig.cs" />
+    <Compile Include="GameConstants.cs" />
+    <Compile Include="GameData\GameReferenceData.cs" />
+    <Compile Include="GameData\RecordProcessors\AnimationProcessor.cs" />
+    <Compile Include="GameData\RecordProcessors\ConfigProcessor.cs" />
+    <Compile Include="GameData\RecordProcessors\ImageProcessor.cs" />
+    <Compile Include="GameModel.cs" />
+    <Compile Include="GameModelDefaults.cs" />
+    <Compile Include="Gameplay\AgentPool.cs" />
+    <Compile Include="Gameplay\Deck.cs" />
+    <Compile Include="Gameplay\Mission.cs" />
+    <Compile Include="Gameplay\Tile.cs" />
+    <Compile Include="Gameplay\Party.cs" />
+    <Compile Include="Gameplay\TileType.cs" />
+    <Compile Include="GameStateGameplay.cs" />
+    <Compile Include="GameStatePrimary.cs" />
+    <Compile Include="GameTickUpdater.cs" />
+    <Compile Include="Gameplay\GameWorld.cs" />
+    <Compile Include="Screens\MenuOptionInGame.cs" />
+    <Compile Include="Screens\MenuOptionPrimary.cs" />
+    <Compile Include="Screens\ScreenModelCharacterDetail.cs" />
+    <Compile Include="Screens\ScreenModelCredits.cs" />
+    <Compile Include="Screens\ScreenModelPressYourLuck.cs" />
+    <Compile Include="Screens\ScreenModelTitleMenu.cs" />
+    <Compile Include="UI\GameCamera.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ticker\Primary\TickerCoreGamePlay.cs" />
+    <Compile Include="Ticker\TickerGameWorld.cs" />
+    <Compile Include="UI\ColorsOfficial.cs" />
+    <Compile Include="UI\TimeWaveManager.cs" />
+    <Compile Include="UI\Title\TitleScreenParticle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\Widgets\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

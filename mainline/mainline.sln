@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.Model", "WreckSector.Model\WreckSector.Model.csproj", "{64783A58-C441-44C0-BA15-5AF69F2F1D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.GameEditor", "WreckSector.GameEditor\WreckSector.GameEditor.csproj", "{E8387234-30DA-4E71-8973-94903584E52F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.GameAssets", "WreckSector.GameAssets\WreckSector.GameAssets.csproj", "{2D562417-3C73-4FCB-9650-F3CE20B97E5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.FormController", "WreckSector.FormController\WreckSector.FormController.csproj", "{29AF51B5-F48E-4ED2-A573-95B9016475A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.FormView", "WreckSector.FormView\WreckSector.FormView.csproj", "{76215197-A6BF-446D-BFB9-D9CFF781BD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WreckSector.FormDriver", "WreckSector.FormDriver\WreckSector.FormDriver.csproj", "{AA4B3663-A365-4B8C-800F-0386A4859D98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolultionProperties", "SolultionProperties", "{95A4851A-A566-4985-B47F-98F22ACD3B54}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionProperties\SolutionInfo.cs = SolutionProperties\SolutionInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64783A58-C441-44C0-BA15-5AF69F2F1D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64783A58-C441-44C0-BA15-5AF69F2F1D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64783A58-C441-44C0-BA15-5AF69F2F1D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64783A58-C441-44C0-BA15-5AF69F2F1D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8387234-30DA-4E71-8973-94903584E52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8387234-30DA-4E71-8973-94903584E52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8387234-30DA-4E71-8973-94903584E52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8387234-30DA-4E71-8973-94903584E52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D562417-3C73-4FCB-9650-F3CE20B97E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D562417-3C73-4FCB-9650-F3CE20B97E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D562417-3C73-4FCB-9650-F3CE20B97E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D562417-3C73-4FCB-9650-F3CE20B97E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AF51B5-F48E-4ED2-A573-95B9016475A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AF51B5-F48E-4ED2-A573-95B9016475A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AF51B5-F48E-4ED2-A573-95B9016475A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AF51B5-F48E-4ED2-A573-95B9016475A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76215197-A6BF-446D-BFB9-D9CFF781BD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76215197-A6BF-446D-BFB9-D9CFF781BD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76215197-A6BF-446D-BFB9-D9CFF781BD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76215197-A6BF-446D-BFB9-D9CFF781BD81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA4B3663-A365-4B8C-800F-0386A4859D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4B3663-A365-4B8C-800F-0386A4859D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4B3663-A365-4B8C-800F-0386A4859D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4B3663-A365-4B8C-800F-0386A4859D98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

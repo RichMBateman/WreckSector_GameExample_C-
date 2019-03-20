@@ -1,0 +1,79 @@
+#####################################################################################
+# (N) animations.txt -                                                              #
+#                                                                                   #
+# Defines animations specific to particular spritesheets.                           #
+# -Note that ALL spritesheets get some generic animations for free.                 #
+# -These free animations are animations per row, column, and the whole sheet.       #
+#                                                                                   #
+# Properties:                                                                       #
+# -ForSprite: The key of the sprite for whom this animation applies.                #
+# -Name: Unique identifier for this animation for this sprite.                      #
+# -OverallDelay: This will become the default delay value for this animation,       #
+#     instead of the usual default delay per frame.
+# -Frames: Comma-delimited list of frame entries.                                   #
+#     -A frame entry looks like this:                                               #
+#        X|Y|Delay                                                                  #
+#        X and Y are the coordinates on the spritesheet (0,0 is upper left frame)   #
+#        Delay is the number of ticks to stay on this frame.                        #
+#        Delay is OPTIONAL.  If not specified, default is used.                     #
+#                                                                                   #
+# Notes:                                                                            #
+# -Animation names are unique for that sprite sheet.                                #
+# -This system is designed so not all spritesheets have to have the same animations #
+#     or have them defined using the same set of frames.                            #
+#####################################################################################
+
+#####################
+# DOODAD ANIMATIONS #
+#####################
+N|ForSprite=d_dungeon_gate#Name=Creepy#OverallDelay=12#Frames=4|1,0|2,1|2,2|2,3|2,4|2,0|3,1|3,2|3,3|3,4|3
+N|ForSprite=d_dungeon_gate#Name=Open#OverallDelay=12#Frames=0|0,1|0,2|0,3|0,4|0,0|1,1|1,2|1,3|1
+N|ForSprite=d_grate_dungeon#Name=BlinkyEyes#OverallDelay=15#Frames=0|1,1|1,2|1,3|1,0|2,1|2,2|2,3|2
+N|ForSprite=d_grate_dungeon_floor#Name=Pinky#OverallDelay=15#Frames=1|0,2|0,3|0,0|1,1|1,2|1,3|1
+
+#####################
+# ENTITY ANIMATIONS #
+#####################
+N|ForSprite=e_celeste#Name=FaceBack#Frames=1|0
+N|ForSprite=e_celeste#Name=FaceLeft#Frames=5|5
+N|ForSprite=e_celeste#Name=FaceRight#Frames=0|0
+N|ForSprite=e_celeste#Name=WalkRight#Frames=2|1,3|1,4|1,3|1,2|1,0|1,1|1,0|1
+N|ForSprite=e_celeste#Name=WalkLeft#Frames= 3|6,2|6,1|6,2|6,3|6,5|6,4|6,5|6
+N|ForSprite=e_celeste#Name=FumeRight#Frames=0|4,1|4,2|4,3|4,4|4,5|4,4|4,3|4,4|4,5|4,4|4,3|4,2|4,1|4,0|4
+N|ForSprite=e_celeste#Name=FumeLeft#Frames= 5|9,4|9,3|9,2|9,1|9,0|9,1|9,2|9,1|9,0|9,1|9,2|9,3|9,4|9,5|9
+N|ForSprite=e_celeste#Name=LaughRight#Frames=0|2,1|2,2|2,3|2,4|2,5|2,4|2,3|2,2|2,3|2,4|2,5|2,4|2,3|2,2|2,1|2,0|2
+N|ForSprite=e_celeste#Name=LaughLeft#Frames= 5|7,4|7,3|7,2|7,1|7,0|7,1|7,2|7,3|7,2|7,1|7,0|7,1|7,2|7,3|7,4|7,5|7
+N|ForSprite=e_celeste#Name=IdleRight#Frames=0|3,1|3,0|3,1|3,0|3,1|3,0|3,1|3,0|3,1|3,0|3,1|3,0|3,1|3,0|3,1|3
+N|ForSprite=e_celeste#Name=IdleLeft#Frames=5|8,4|8,5|8,4|8,5|8,4|8,5|8,4|8,5|8,4|8,5|8,4|8,5|8,4|8,5|8,4|8
+
+N|ForSprite=e_qobos#Name=FaceBack#Frames=0|5
+N|ForSprite=e_qobos#Name=FaceLeft#Frames=7|0
+N|ForSprite=e_qobos#Name=FaceRight#Frames=0|0
+N|ForSprite=e_qobos#Name=WalkRight#Frames=1|0,2|0,3|0,2|0,1|0,0|1,1|1,0|1
+N|ForSprite=e_qobos#Name=WalkLeft#Frames= 6|0,5|0,4|0,5|0,6|0,7|1,6|1,7|1
+N|ForSprite=e_qobos#Name=IdleRight#OverallDelay=30#Frames=2|1,3|1,0|2,1|2,2|2
+N|ForSprite=e_qobos#Name=IdleLeft#OverallDelay=30#Frames= 5|1,4|1,7|2,6|2,5|2
+
+N|ForSprite=e_teddy#Name=FaceBack#Frames=1|0
+N|ForSprite=e_teddy#Name=FaceLeft#Frames=6|4
+N|ForSprite=e_teddy#Name=FaceRight#Frames=0|1
+N|ForSprite=e_teddy#Name=WalkRight#Frames=2|1,3|1,4|1,3|1,2|1,5|1,6|1,5|1
+N|ForSprite=e_teddy#Name=WalkLeft#Frames=4|4,3|4,2|4,3|4,4|4,1|4,0|4,1|4
+N|ForSprite=e_teddy#Name=IdleRight#OverallDelay=30#Frames=0|3,1|3,2|3,1|3,0|3,1|3,2|3,1|3,0|3
+N|ForSprite=e_teddy#Name=IdleLeft#OverallDelay=30#Frames=0|6,1|6,2|6,1|6,0|6,1|6,2|6,1|6,0|6
+N|ForSprite=e_teddy#Name=YawnRight#Frames=0|2,1|2,2|2,3|2,4|2,5|2,6|2
+N|ForSprite=e_teddy#Name=YawnLeft#Frames=0|5,1|5,2|5,3|5,4|5,5|5,6|5
+
+N|ForSprite=e_wolf#Name=FaceRight#Frames=0|0
+N|ForSprite=e_wolf#Name=FaceLeft#Frames=1|0
+N|ForSprite=e_wolf#Name=WalkRight#Frames=2|0,3|0,4|0,3|0,2|0,5|0,6|0,5|0
+N|ForSprite=e_wolf#Name=WalkLeft#Frames=11|0,10|0,9|0,10|0,11|0,8|0,7|0,8|0
+N|ForSprite=e_wolf#Name=IdleRight#Frames=1|1,0|1,1|1,3|1,1|1,2|1,1|1,3|1,2|1,1|1
+N|ForSprite=e_wolf#Name=IdleLeft#Frames= 6|1,7|1,6|1,4|1,6|1,5|1,6|1,4|1,5|1,6|1
+N|ForSprite=e_wolf#Name=BrandishRight#Frames=8|1,9|1,10|1,11|1,10|1,9|1,10|1,11|1,10|1,9|1,10|1,11|1,0|2
+N|ForSprite=e_wolf#Name=BrandishLeft#Frames= 4|2,3|2,2|2, 1|2, 2|2, 3|2,2|2, 1|2, 2|2, 3|2,2|2, 1|2, 5|2
+N|ForSprite=e_wolf#Name=RoarRight#Frames=6|2,7|2,8|2, 9|2, 8|2, 7|2,8|2, 9|2, 8|2, 7|2,8|2, 9|2, 8|2, 7|2,6|2,0|0
+N|ForSprite=e_wolf#Name=RoarLeft#Frames= 1|3,0|3,11|2,10|2,11|2,0|3,11|2,10|2,11|2,0|3,11|2,10|2,11|2,0|3,1|3,1|0
+N|ForSprite=e_wolf#Name=ChipRight#Frames=2|3,2|3,4|3,5|3,6|3,7|3,8|3,9|3,10|3,11|3,2|3,11|3,2|3,11|3,2|3,11|3,2|3
+N|ForSprite=e_wolf#Name=ChipRight#Frames=9|4,8|4,7|4,6|4,5|4,4|4,3|4,2|4,1|4, 0|4, 9|4, 0|4,9|4, 0|4,9|4, 0|4,9|4
+N|ForSprite=e_wolf#Name=FaceBack#Frames=10|4
